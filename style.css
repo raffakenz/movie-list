@@ -1,0 +1,83 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: crimson;
+    padding: 30px;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+body {
+    color: white;
+    background: linear-gradient(crimson, rgb(160, 0, 32));
+}
+
+.searchInput {
+    width: 15rem;
+    height: 3rem;
+    font-size: large;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    text-align: center;
+}
+
+#moviesElement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 15px;
+}
+
+.movie {
+    width: 100%;
+    height: 1280px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: crimson;
+}
+
+.movie img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.pagination {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#prev, #next {
+    background-color: crimson;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#currentPage {
+    font-size: large;
+    font-weight: 700;
+}
+
+#judul {
+    cursor: pointer;
+}
